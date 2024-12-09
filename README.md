@@ -7,5 +7,12 @@ https://www.instant-gaming.com/es/
 ### context: si hay que usar useContext nativo de react
 ### adapters: Logica o Componentes reutilizables 
 
+Tecnoligias: 
+.Astro Js
+.Redux Toolkit
+.Tailwind
+.Css
+.React Js
+
 ![bfdbfdb](https://github.com/user-attachments/assets/7c2d0641-239c-45d1-a5a2-9638522408aa)
 
