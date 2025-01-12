@@ -1,58 +1,82 @@
-:root{
-    --radius:1rem ;
-    --seconds: .3s;
+:root {
+  --radius: 1rem;
+  --seconds: 0.3s;
+  /*Button Bg*/
+  --fire-gradient: linear-gradient(10deg, #ff8000, transparent) #ff4020;
+  --fire-gradient-hover: linear-gradient(190deg, #ff2020, #ff8000);
 }
 /* global styles */
-.g_maxwith{
-    max-width: 1000px;
+.g_maxwith {
+  max-width: 1000px;
 }
-.g_imagesgames{
-    height: auto;
-    width: 300px;
-    border-radius: var(--radius);
-    transform: scale(0.9);
-    cursor: pointer;
-    &:hover{
-        transition: all  ease-in-out;
-        transition-duration: var(--seconds);
-        transform: scale(1.0);
-        .g_percent_discount{
-            opacity: 0;
-        }
-
+.g_imagesgames {
+  height: auto;
+  width: 300px;
+  border-radius: var(--radius);
+  transform: scale(0.9);
+  cursor: pointer;
+  &:hover {
+    transition: all ease-in-out;
+    transition-duration: var(--seconds);
+    transform: scale(1);
+    .g_percent_discount {
+      opacity: 0;
     }
-    &:not(:hover){
-        transition: all ease-in-out;
-        transition-duration: var(--seconds);
-
-    }
+  }
+  &:not(:hover) {
+    transition: all ease-in-out;
+    transition-duration: var(--seconds);
+  }
 }
 .g_grid_sections {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-    gap: 1rem;
-   
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1rem;
 }
-.g_percent_discount{
-    background: #ff5400;
-    position: absolute;
-    left: 20px;
-    bottom: 12px;
-    padding: 3px;
+.g_percent_discount {
+  background: #ff5400;
+  position: absolute;
+  left: 20px;
+  bottom: 12px;
+  padding: 3px;
 }
-.g_gameprices{
-    font-weight: bold;
-    font-size: 14px;
+.g_gameprices {
+  font-weight: bold;
+  font-size: 14px;
 }
-h1{
-    font-size: 25px;
-    color: #fff;
+h1 {
+  font-size: 25px;
+  color: #fff;
 }
-p{
-    color: #fff;
-    font-size: 13px;
-    text-overflow: ellipsis;
+p {
+  color: #fff;
+  font-size: 13px;
+  text-overflow: ellipsis;
 }
-body{
-    background: #272727;
+body {
+  background: #272727;
 }
+
+.btn.btn-primary {
+  align-items: center;
+  background: var(--fire-gradient);
+  border: 0;
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 17px;
+  font-weight: 700;
+  height: 56px;
+  justify-content: center;
+  padding: 0 25px;
+  text-align: center;
+  white-space: normal;
+
+  &:hover {
+    background: var(--fire-gradient-hover);
+  }
+}
+
+
