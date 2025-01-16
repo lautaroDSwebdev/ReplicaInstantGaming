@@ -1,11 +1,45 @@
 ---
-import Layout from "@/layouts/Layout.astro"
-import "../global.css"
-import Tendencias from "@/components/Tendencias.astro"
+import Layout from '@/layouts/Layout.astro'
+import '../global.css'
+import Tendencias from '@/components/Tendencias.astro'
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Tendencias />
+  <Tendencias />
+  <section class='testimonials-section'>
+    <div class='mx-auto bg-[#323232]'>
+      <div class='flex justify-start items-center w-full'>
+        <picture>
+          <img
+            loading='lazy'
+            alt=''
+            src='https://www.instant-gaming.com/themes/igv2/modules/streamerBanner/images/partners-avatar2-es.png'
+          />
+        </picture>
+        <div class='flex flex-col justify-center items-center'>
+          <img
+            src='https://www.instant-gaming.com/themes/igv2/modules/streamerBanner/images/stars-rating2.svg'
+            alt='rating'
+            class='rating-img'
+          />
+          <p>
+            Instant Gaming es una plataforma increíble para comprar tus juegos
+            de PC, PlayStation, Xbox y Switch más baratos. ¡Con entrega
+            inmediata 24/7, juega al instante al precio más bajo!
+          </p>
+          <a
+            href=''
+            target='_blank'
+            rel=''
+            aria-label='Reseñas de los usuarios'
+            class='btn btn-primary'
+          >
+            1,532,965 reseñas de usuarios
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>

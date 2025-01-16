@@ -80,3 +80,10 @@ body {
 }
 
 
+.testimonials-section {
+  .rating-img {
+    height: 15px;
+    margin-bottom: 25px;
+    width: 100px;
+  }
+}
