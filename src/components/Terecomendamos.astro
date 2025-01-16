@@ -1,18 +1,18 @@
 ---
-import { data } from "@/mock/data";
 import Svg from "@/reusable/Svg.astro";
+import {data} from "../mock/data"
 
-const { Tendencies } = data;
+const {WeRecomendYou } = data
 ---
 
 <section class="g_maxwith mx-auto" id="container">
     <div class="g_div_titlesection">
-        <h1>Tendencias</h1>
+        <h1>Te recomendamos</h1>
        <Svg/>
     </div>
-    <div class="g_grid_sections">
+    <div class="flex flex-wrap justify-center">
         {
-            Tendencies.map((e) => {
+            WeRecomendYou.map((e) => {
                 return (
                     <div class="flex flex-col  ">
                         <a class="relative g_a_images_p">
@@ -29,5 +29,3 @@ const { Tendencies } = data;
         }
     </div>
 </section>
-
-

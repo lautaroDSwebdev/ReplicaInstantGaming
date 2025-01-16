@@ -9,40 +9,49 @@
 .g_maxwith {
   max-width: 1000px;
 }
-.g_imagesgames {
-  height: auto;
-  width: 300px;
-  border-radius: var(--radius);
-  transform: scale(0.9);
-  cursor: pointer;
-  &:hover {
-    transition: all ease-in-out;
-    transition-duration: var(--seconds);
-    transform: scale(1);
-    .g_percent_discount {
+/* To style the image games with páragraph discount percent */
+.g_a_images_p {
+  img {
+    height: auto;
+    width: 300px;
+    border-radius: var(--radius);
+    transform: scale(0.9);
+    cursor: pointer;
+    &:hover {
+      transition: all ease-in-out;
+      transition-duration: var(--seconds);
+      transform: scale(1);
       opacity: 0;
     }
+    &:not(:hover) {
+      transition: all ease-in-out;
+      transition-duration: var(--seconds);
+    }
   }
-  &:not(:hover) {
-    transition: all ease-in-out;
-    transition-duration: var(--seconds);
+  p {
+    background: #ff5400;
+    position: absolute;
+    left: 15px;
+    bottom: 9px;
+    padding: 3px;
+    border-radius: 2px 9px 2px 2px;
   }
 }
+
 .g_grid_sections {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   gap: 1rem;
-}
-.g_percent_discount {
-  background: #ff5400;
-  position: absolute;
-  left: 20px;
-  bottom: 12px;
-  padding: 3px;
+  padding-top: 3vh;
 }
 .g_gameprices {
   font-weight: bold;
   font-size: 14px;
+}
+.g_titlegame_price{
+  display: flex;
+  justify-content: space-between;
+  max-width: 302px;
 }
 h1 {
   font-size: 25px;
@@ -56,7 +65,22 @@ p {
 body {
   background: #272727;
 }
+.g_p_titlesgames {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  &:hover{
+    overflow: visible;
+    white-space: wrap;
+    text-overflow: clip;
 
+  }
+}
+.g_div_titlesection{
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
 .btn.btn-primary {
   align-items: center;
   background: var(--fire-gradient);
@@ -78,8 +102,6 @@ body {
     background: var(--fire-gradient-hover);
   }
 }
-
-
 .testimonials-section {
   .rating-img {
     height: 15px;

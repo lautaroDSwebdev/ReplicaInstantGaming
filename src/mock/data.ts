@@ -64,6 +64,45 @@ export const data = {
             discount: 39,
             img: "./sea-power-naval-combat-in-the-missile-age-pc-juego-steam-cover.png"
         },
+    ],
+    WeRecomendYou:[
+        {
+            id: 54543,
+            title: "Minecraft",
+            price: 3.22  ,
+            discount: 39,
+            img: "./minecraft-java-bedrock-edition-java-bedrock-edition-pc-juego-cover.png",
+            video: "./murky-divers-pc-juego-steam-preview.webm"
+        },
+        {
+            id: 43545,
+            title: "Ghost of Tsushima",
+            price:  30.75,
+            discount: 39,
+            img: "./ghost-of-tsushima-director-s-cut-pc-juego-steam-cover.png"
+        },
+        {
+            id: 43545,
+            title: "Warhammer",
+            price: 19.25,
+            discount: 39,
+            img: "./warhammer-40-000-space-marine-2-pc-juego-steam-cover.png"
+        },
+        {
+            id: 43545,
+            title: "Tour de France",
+            price:  29.57,
+            discount: 39,
+            img: "./tour-de-france-2024-pc-juego-steam-cover.png"
+        },
+        {
+            id: 5656,
+            title: "Construction Simulator",
+            price:  49.72,
+            discount: 39,
+            img: "./construction-simulator-pc-juego-steam-cover.png"
+        },
+      
     ]
 }
 
